@@ -1,2 +1,2 @@
 README for repository
-CI added
+CI added and tweaked
