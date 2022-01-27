@@ -11,4 +11,4 @@ CI added and tweaked
 [![Releases](https://img.shields.io/github/release/Chris1429/sem/all.svg?style=flat-square)](https://github.com/Chris1429/sem/releases)
 
 # Software Engineering Methods
-![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/Chris1429/sem/main.yml/develop?style=flat-square)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/Chris1429/sem/A%20workflow%20for%20my%20Hello%20World%20App/develop)
