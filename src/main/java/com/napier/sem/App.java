@@ -11,6 +11,16 @@ public class App
 
         // Connect to database
         a.connect();
+        //test
+        System.out.println("Connection succeeded, creating employee");
+        // Get Employee
+        Employee emp = a.getEmployee(255530);
+        //test
+        System.out.println("Getting employee terminated");
+        // Display results
+        a.displayEmployee(emp);
+        //test
+        System.out.println("Failed to display employee details");
 
         // Disconnect from database
         a.disconnect();
@@ -47,7 +57,9 @@ public class App
                 Thread.sleep(30000);
                 // Connect to database
                 con = DriverManager.getConnection("jdbc:mysql://db:3306/employees?useSSL=false", "root", "example");
-                System.out.println("Successfully connected");
+                System.out.println("Successfully connected, now breaking");
+                //test
+                System.out.println("Connection succeeded, now breaking");
                 break;
             }
             catch (SQLException sqle)
@@ -113,6 +125,24 @@ public class App
             System.out.println("Failed to get employee details");
             return null;
         }
+    }
+
+    public void displayEmployee(Employee emp)
+    {
+        if (emp != null) {
+                System.out.println(
+                        emp.emp_no + " "
+                                + emp.first_name + " "
+                                + emp.last_name + "\n"
+                                + emp.title + "\n"
+                                + "Salary:" + emp.salary + "\n"
+                                + emp.dept_name + "\n"
+                                + "Manager: " + emp.manager + "\n");
+            }
+        else if (emp == null) {
+            System.out.println("Failed to display employee details");
+            }
+
     }
 
 }
