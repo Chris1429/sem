@@ -11,17 +11,11 @@ public class App
 
         // Connect to database
         a.connect();
-        //test
-        System.out.println("Connection succeeded, creating employee");
         // Get Employee
         Employee emp = a.getEmployee(255530);
-        //test
-        System.out.println("Getting employee terminated");
+
         // Display results
         a.displayEmployee(emp);
-        //test
-        System.out.println("Failed to display employee details");
-
         // Disconnect from database
         a.disconnect();
     }
@@ -57,9 +51,7 @@ public class App
                 Thread.sleep(30000);
                 // Connect to database
                 con = DriverManager.getConnection("jdbc:mysql://db:3306/employees?useSSL=false", "root", "example");
-                System.out.println("Successfully connected, now breaking");
-                //test
-                System.out.println("Connection succeeded, now breaking");
+                System.out.println("Successfully connected");
                 break;
             }
             catch (SQLException sqle)
