@@ -126,7 +126,7 @@ public class App
                         emp.emp_no + " "
                                 + emp.first_name + " "
                                 + emp.last_name + "\n"
-                                + emp.title + "\n"
+                                + "Title: " + emp.title + "\n"
                                 + "Salary:" + emp.salary + "\n"
                                 + emp.dept_name + "\n"
                                 + "Manager: " + emp.manager + "\n");
